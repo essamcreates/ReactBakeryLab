@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Recipe from "../components/Recipe";
 
-const RecipeContainer = () => {
+const CakeContainer = () => {
     
     const [victoriaSpongeRating, setVictoriaSpongeRating] = useState(0);
     const [teaLoafRating, setTeaLoafRating] = useState(0);
@@ -42,9 +42,9 @@ const RecipeContainer = () => {
             price={8}
             rating={5}
             />
-            <p>The average rating of all cakes: {victoriaSpongeRating + teaLoafRating + carrotCakeRating }</p>
+            <p>The average rating of all cakes: {(victoriaSpongeRating + teaLoafRating + carrotCakeRating)/3 }</p>
         </>
     )
 }
 
-export default RecipeContainer;
+export default CakeContainer;
